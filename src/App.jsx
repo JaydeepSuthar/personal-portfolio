@@ -1,3 +1,5 @@
+import "./App.scss";
+
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -8,15 +10,17 @@ import Contact from "./components/contact/Contact";
 function App() {
 	return (
 		<>
-			{/* Top */}
-			<Topbar />
-			{/* Section - Intro :: Portfolio :: Work */}
-			<div className="sections">
-				<Intro />
-				<Portfolio />
-				<Works />
-				<Testimonials />
-				<Contact />
+			<div className="app">
+				{/* Top */}
+				<Topbar />
+				{/* Section - Intro :: Portfolio :: Work */}
+				<div className="sections">
+					<Intro />
+					<Portfolio />
+					<Works />
+					<Testimonials />
+					<Contact />
+				</div>
 			</div>
 		</>
 	);

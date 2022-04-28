@@ -1,4 +1,30 @@
-.App {
+.app {
+	height: 100vh;
+
+	.sections {
+		overflow: hidden scroll;
+
+		width: 100%;
+		height: calc(100vh - 5em);
+		background-color: lightsalmon;
+		position: relative;
+		top: 5em;
+
+		scroll-snap-type: y mandatory;
+		&::-webkit-scrollbar { // for chrome
+			display: none;
+		}
+
+
+		> * {
+			width: 100vw;
+			height: calc(100vh - 5em);
+			scroll-snap-align: start;
+		}
+	}
+}
+
+/* .App {
 	text-align: center;
 }
 
@@ -39,4 +65,4 @@
 
 button {
 	font-size: calc(10px + 2vmin);
-}
+} */
